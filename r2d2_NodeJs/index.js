@@ -9,9 +9,11 @@ bot.on('message', (msg) => {
   var Mensaje = msg.text;
   if (Mensaje == "encender"){
     console.log("encendiendo el Led");
+    bot.sendMessage(chatId, 'Encendiendo La Luz Del Patio');
   }
   else if (Mensaje == "apagar") {
     console.log("apagar el Led");
+    bot.sendMessage(chatId, 'Apagando La Luz Del Patio');
   }
-  bot.sendMessage(chatId, 'Received your message');
+
 });
